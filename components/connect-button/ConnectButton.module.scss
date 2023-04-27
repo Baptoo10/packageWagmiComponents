@@ -1,0 +1,42 @@
+@import "../../styles/constants.scss";
+
+.connect__btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    .profile__menu{
+        font-weight: 600;
+        padding: 20px;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 12px;
+
+        hr{
+            width: 100%;
+        }
+        div{
+            cursor: pointer;
+        }
+
+        .disconnect{
+            color: $yellow;
+        }
+    }
+
+    button{
+        max-width: 250px;
+        padding: 10px 20px;
+      } 
+
+    @media (max-width: $mobileBreakpoint) {
+      button{
+        max-width: 150px;
+        padding: 10px 20px;
+        font-size: 15px;
+      } 
+    }
+}

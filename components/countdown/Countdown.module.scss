@@ -1,0 +1,47 @@
+@import "../../styles/constants.scss";
+
+.countdown__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+     @media (max-width: $mobileBreakpoint) {
+            gap: 10px;
+        }
+
+    .time__item {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        
+        @media (max-width: $mobileBreakpoint) {
+            gap: 10px;
+        }
+
+        .countdown__element {
+            background-color: white;
+            width: 40px;
+            height: 70px;
+            color: black;
+            font-weight: 700;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: $mobileBreakpoint) {
+                width: 25px;
+            }
+        }
+    }
+
+    .time__label{
+        margin-top: 10px;
+        color: $yellow;
+    }
+
+
+}
